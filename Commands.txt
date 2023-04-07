@@ -1,0 +1,1 @@
+ffmpeg -i Evideoplayback.mp4 -ab 160k -ac 2 -ar 44100 -vn Eaudio.wav
