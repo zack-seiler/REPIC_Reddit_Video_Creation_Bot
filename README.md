@@ -5,24 +5,24 @@ rEPIC is a Python-based tool that generates videos using Reddit posts and commen
 # Required Dependencies
 To use rEPIC, the following libraries must be installed:
 
-praw
-requests
-re
-unidecode
-PIL
-textwrap
-os
-google.cloud text to speech
-pyttsx3
-pydub
-contextlib
-wave
-moviepy
+* praw
+* requests
+* re
+* unidecode
+* PIL
+* textwrap
+* os
+* google.cloud text to speech
+* pyttsx3
+* pydub
+* contextlib
+* wave
+* moviepy
 
 You must also make a reddit bot and it's Client ID and Client Secret must be stored in a text file called "Client_Tokens.txt" with the Client ID placed on the first line of the text file, and the Client Secret on the second line.
 
-All you have to do to generate a video is find a reddit post, copy the link to the post (not the subreddit), and paste it in the url_list variable. You can add as many posts as you would like, and the program will generate them sequentially automatically.
-NOTE: Video length is limited to one minute, so try to find posts with many shorter comments, rather than posts with long comments.
+**All you have to do to generate a video is find a reddit post, copy the link to the post (not the subreddit), and paste it in the url_list variable. You can add as many posts as you would like, and the program will generate them sequentially automatically.
+NOTE: Video length is limited to one minute, so try to find posts with many shorter comments, rather than posts with long comments.**
 
 # Audio and Video Files
 To generate videos using rEPIC, you must place your own audio file in the Audio folder and your own background video file in the Video folder. Be sure to specify the start times to be randomly selected from the video file using the start_time_list in videoprocessing.py
